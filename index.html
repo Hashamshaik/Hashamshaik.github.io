@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Page-1</title>
+    <style>
+        button {
+            background-color: aquamarine;
+        }
+        button:hover {
+background-color: brown;
+        }
+        @media (min-width: 500px){
+            body {
+                background-color: burlywood;
+            }
+        }
+        @media (max-width: 500px) {
+            body {
+                background-color: cyan;
+            }
+        }
+        #container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #container > div {
+            background-color: darkgreen;
+            margin: 10px;
+            padding: 10px;
+            width: 100 px;
+            height: 40px;
+        }
+        #grid{
+            display: grid;
+            background-color: darkmagenta;
+            text-align: center;
+            padding: 20px;
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+            grid-template-columns: 200px 200px auto;
+
+        }
+        .gridclass > div {
+            background-color: #fff;
+            padding: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome Page 1</h1>
+    <button>Click Me</button>
+    <div id="container">
+        <div>1. Item 1</div>
+        <div>2. Item 2</div>
+        <div>3. Item 3</div>
+        <div>4. Item 4</div>
+        <div>5. Item 5</div>
+        <div>6. Item 6</div>
+        <div>7. Item 7</div>
+        <div>8. Item 8</div>
+        <div>9. Item 9</div>
+    </div>
+    <div class="gridclass" id="grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+   
+</body>
+</html>
